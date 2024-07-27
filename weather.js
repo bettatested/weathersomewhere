@@ -1,3 +1,5 @@
+// AI Disclosure: I used ChatGPT to help troubleshoot syntax errors, and to help me understand the API. The rest (most) of the code is my own.
+
 document.addEventListener('DOMContentLoaded', () => {
     getWeather();
 });
