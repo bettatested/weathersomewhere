@@ -17,7 +17,9 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "1275339", // Mumbai, IN
         "5128581", // New York, US
         "5879400", // Anchorage, US
+        "5861897", // Fairbanks, US
         "5506956", // Las Vegas, US
+        "5391959", // San Francisco, US
         "4887398", // Chicago, US
         "5263045", // Milwaukee, US
         "4990729", // Detroit, US
