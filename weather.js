@@ -94,7 +94,22 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "2158177", // Melbourne, AU
         "2179537", // Wellington, NZ
         "2193732", // Auckland, NZ
-        
+        "3143244", // Oslo, NO
+        "3161733", // Bergen, NO
+        "2673730", // Stockholm, SE
+        "2666199", // Uppsala, SE
+        "2711537", // Göteborg (Gothenburg), SE
+        "643492", // Oulu, FI
+        "658225", // Helsinki, FI
+        "660158", // Espoo, FI
+        "633679", // Turku, FI
+        "634963", // Tampere, FI
+        "646005", // Mikkeli, FI
+        "588409", // Tallinn, EE
+        "588335", // Tartu, EE
+        "456172", // Riga, LV
+        "460413", // Daugavpils, LV
+        "2618425", // Copenhagen, DK
 
     ];
     const apiKey = "";
