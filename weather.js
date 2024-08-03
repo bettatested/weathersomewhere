@@ -9,8 +9,15 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "2643743", // London, GB
         "2964574", // Dublin, IE
         "2988507", // Paris, FR
+        "2972315", // Toulouse, FR
+        "2996944", // Lyon, FR
+        "3007477", // Laon, FR
         "2661552", // Bern, CH
+        "2660646", // Geneva, CH
         "3169070", // Rome, IT
+        "3173435", // Milan, IT
+        "3176219", // Genoa, IT
+        "3183299", // Alessandria, IT
         "2761369", // Vienna, AT
         "3054643", // Budapest, HU
         "2332459", // Lagos, NG
@@ -110,6 +117,10 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "456172", // Riga, LV
         "460413", // Daugavpils, LV
         "2618425", // Copenhagen, DK
+        "3413829", // Reykjavik, IS
+        "2625252", // Vik, IS
+        "3413604", // Selfoss, IS
+        "2633274", // Akureyri, IS
 
     ];
     const apiKey = "";
