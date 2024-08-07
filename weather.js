@@ -19,6 +19,7 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "3176219", // Genoa, IT
         "3183299", // Alessandria, IT
         "2761369", // Vienna, AT
+        "290030", // Doha, QA
         "3054643", // Budapest, HU
         "2332459", // Lagos, NG
         "1275339", // Mumbai, IN
@@ -26,6 +27,8 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "5879400", // Anchorage, US
         "5861897", // Fairbanks, US
         "5506956", // Las Vegas, US
+        "5454711", // Albuquerque, US
+        "5419384", // Denver, US
         "5391959", // San Francisco, US
         "4887398", // Chicago, US
         "5263045", // Milwaukee, US
@@ -96,7 +99,9 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "3448439", // São Paulo, BR
         "3871336", // Santiago, CL
         "1609350", // Bangkok, TH
+        "1791247", // Wuhan, CN
         "1850147", // Tokyo, JP
+        "1668341", // Taipei, TW
         "2147714", // Sydney, AU
         "2158177", // Melbourne, AU
         "2179537", // Wellington, NZ
@@ -117,6 +122,7 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "456172", // Riga, LV
         "460413", // Daugavpils, LV
         "2618425", // Copenhagen, DK
+        "2950159", // Berlin, DE
         "3413829", // Reykjavik, IS
         "2625252", // Vik, IS
         "3413604", // Selfoss, IS
