@@ -123,7 +123,10 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "2633274", // Akureyri, IS
 
     ];
-    const apiKey = "";
+
+    const url = new URL(window.location.href); // The URL
+    const apiKey = url.searchParams.get('apikey'); // This gets the API key from the URL (?apikey=USER_API_KEY_HERE)
+
 
     const cityID = cities[Math.floor(Math.random() * cities.length)]; // This generates a random location from the list
 
