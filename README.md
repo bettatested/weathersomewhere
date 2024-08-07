@@ -4,6 +4,8 @@
  - index.html: web page
  - styles.css: CSS
  - weather.js: OpenWeatherMap API
+ - credits.html: image credits
+ - credits.js: sets background image of credits page
 
 ## This is how it works:
 - Selects a random location ID from the list
@@ -13,5 +15,3 @@
 - The JavaScript adds HTML with the weather, current, high, low data and the Fahrenheit temperatures.
 - The background images are stored in the format City(Country).jpeg and it gets the background
 - The coordinates are stored in variables, and the location name (under Weather in) is a link to OpenStreetMap where the coordinates are
-  
-## I plan to add image credit links from Pexels and Unsplash.
