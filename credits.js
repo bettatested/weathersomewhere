@@ -5,6 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 async function getImage() {
     const images = [
         "AkureyriIS",
+        "AlbuquerqueUS",
         "AlessandriaIT",
         "AnchorageUS",
         "AtikokanCA",
@@ -15,6 +16,7 @@ async function getImage() {
         "Belize CityBZ",
         "BergenNO",
         "BernCH",
+        "BerlinDE",
         "BogotaCO",
         "BostonUS",
         "BudapestHU",
@@ -29,6 +31,8 @@ async function getImage() {
         "DallasUS",
         "DaugavpilsLV",
         "DetroitUS",
+        "DenverUS",
+        "DohaQA",
         "DrumhellerCA",
         "DublinIE",
         "EdmontonCA",
@@ -101,6 +105,7 @@ async function getImage() {
         "TegucigalpaHN",
         "Terrace BayCA",
         "Thunder BayCA",
+        "TaipeiTW",
         "TikalGT",
         "TokyoJP",
         "TolucaMX",
@@ -114,6 +119,7 @@ async function getImage() {
         "VikIS",
         "WellingtonNZ",
         "WinnipegCA",
+        "WuhanCN",
         "YellowknifeCA"
     ];
 
