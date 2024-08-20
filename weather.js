@@ -158,10 +158,10 @@ function displayWeather(data) {
     const country = data.sys.country;
     const weather = data.weather[0].description;
 
-    const currentTempF = (currentTempC * 9/5) + 32;
-    const highTempF = (highTempC * 9/5) + 32;
-    const lowTempF = (lowTempC * 9/5) + 32;
-    const feelsLikeF = (feelsLike * 9/5) + 32;
+    const currentTempF = Math.round(currentTempC * 9/5) + 32;
+    const highTempF = Math.round(highTempC * 9/5) + 32;
+    const lowTempF = Math.round(lowTempC * 9/5) + 32;
+    const feelsLikeF = Math.round(feelsLike * 9/5) + 32;
     const coordLon = data.coord.lon;
     const coordLat = data.coord.lat;
 
