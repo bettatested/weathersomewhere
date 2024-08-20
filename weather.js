@@ -39,7 +39,6 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "5050817", // Two Harbors, US
         "5275191", // Superior, US
         "4996572", // Houghton, US
-        "5007450", // Sault Ste. Marie, US
         "4393217", // Kansas City, US
         "4544349", // Oklahoma City, US
         "4407066", // St. Louis, US
@@ -127,17 +126,13 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "2625252", // Vik, IS
         "3413604", // Selfoss, IS
         "2633274", // Akureyri, IS
-
     ];
-
-    const url = new URL(window.location.href); // The URL
-    const apiKey = url.searchParams.get('apikey'); // This gets the API key from the URL (?apikey=USER_API_KEY_HERE)
 
 
     const cityID = cities[Math.floor(Math.random() * cities.length)]; // This generates a random location from the list
 
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?id=${cityID}&units=metric&appid=${apiKey}`);
+        const response = await fetch(`/data/${cityID}.json`);
         if (!response.ok) {
             throw new Error('Location not found or request limit reached');
         }
