@@ -127,7 +127,7 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "2633274", // Akureyri, IS
         "292223", // Dubai, AE
         "3117735", // Madrid, ES
-        "2797656", // Ghent (Gent), BE
+        "2797656", // Ghent, BE
         "2800866", // Brussels, BE
         "2925533", // Frankfurt am Main, DE
         "2910831", // Hanover (Hannover), DE
