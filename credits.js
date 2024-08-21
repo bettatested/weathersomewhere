@@ -103,8 +103,6 @@ async function getImage() {
         "SydneyAU",
         "TallinnEE",
         "TegucigalpaHN",
-        "Terrace BayCA",
-        "Thunder BayCA",
         "TaipeiTW",
         "TikalGT",
         "TokyoJP",
