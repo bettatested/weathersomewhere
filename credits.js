@@ -80,7 +80,7 @@ async function getImage() {
         "MilwaukeeUS",
         "MinneapolisUS",
         "MontrealCA",
-        "MonterreyMX,
+        "MonterreyMX,"
         "MumbaiIN",
         "NaplesIT",
         "New YorkUS",
