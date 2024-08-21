@@ -1,5 +1,5 @@
 # **Weather Somewhere**
-## This displays weather from a random (from a list of 119) location with data from the OpenWeatherMap API.
+## This displays weather from a random (from a list of 141) location with data from the OpenWeatherMap API.
 
 ## How to use it
 1. [https://weathersomewhere.netlify.app](https://weathersomewhere.netlify.app)
