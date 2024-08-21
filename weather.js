@@ -81,6 +81,7 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "6185377", // Yellowknife, CA
         "3530597", // Mexico City, MX
         "3521081", // Puebla City, MX
+        "3995465", // Monterrey, MX
         "3515302", // Toluca, MX
         "3582677", // Belize City, BZ
         "3588369", // Tikal, GT
@@ -124,6 +125,28 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "2625252", // Vik, IS
         "3413604", // Selfoss, IS
         "2633274", // Akureyri, IS
+        "292223", // Dubai, AE
+        "3117735", // Madrid, ES
+        "2797656", // Ghent (Gent), BE
+        "2800866", // Brussels, BE
+        "2925533", // Frankfurt am Main, DE
+        "2910831", // Hanover (Hannover), DE
+        "2775220", // Innsbruck, AT
+        "2659994", // Lausanne, CH
+        "3172394", // Naples, IT
+        "3165524", // Turin, IT
+        "650946", // Kotka, FI
+        "648090", // Lieksa, FI
+        "756135", // Warsaw, PL
+        "2750053", // Nijmegen, NL
+        "2755003", // Haarlem, NL
+        "5604045", // Pocatello, US
+        "3553478", // Havana, CU
+        "4174757", // Tampa, US
+        "5959974", // Gatineau, CA
+        "2641455", // Norfolk, GB
+        "5947866", // Elliot Lake, CA
+
     ];
 
 
