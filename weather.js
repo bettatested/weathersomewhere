@@ -66,8 +66,6 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "6325494", // Québec, CA
         "5991055", // Kenora, CA
         "5888001", // Atikokan, CA
-        "6166142", // Thunder Bay, CA
-        "6162951", // Terrace Bay, CA
         "6173331", // Vancouver, CA
         "5921356", // Chilliwack, CA
         "5989045", // Kamloops, CA
