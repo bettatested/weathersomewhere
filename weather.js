@@ -89,7 +89,7 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
         "3582677", // Belize City, BZ
         "3588369", // Tikal, GT
         "3583361", // San Salvador, SV
-        "3590979", // Quetzaltenango, SV
+        "3590979", // Quetzaltenango, GT
         "3600949", // Tegucigalpa, HN
         "3601783", // San Pedro Sula, HN
         "3617763", // Managua, NI
@@ -287,7 +287,103 @@ async function getCredit() { // loads image credit, not the most efficient, but 
         credit = `<a href="https://www.pexels.com/photo/aerial-view-of-city-buildings-5627116/">Photo by Andrés García</a>`;
     } else if (cityID === "4835797") { // Hartford, US
         credit = `<a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-jeJWWrldemw">Photo by Balazs Busznyak on Unsplash</a>`;
-    } else {
+    } else if (cityID === "4781756") { // Richmond, US
+        credit = `<a href="https://unsplash.com/photos/high-rise-building-during-sunset-WGXHrJ6DSEQ">Photo by Alexander Jawfox on Unsplash</a>`;
+    } else if (cityID === "4460243") { // Charlotte, US
+        credit = `<a href="https://unsplash.com/photos/a-train-yard-with-many-trains-on-the-tracks-cJp16tjKAWk">Photo by Ryan M on Unsplash</a>`;
+    } else if (cityID === "4574324") { // Charleston, US
+        credit = `<a href="https://unsplash.com/photos/aerial-photo-of-bridge-during-daytime-p9vBVq_-nXY">Photo by David Martin</a>`;
+    } else if (cityID === "4160021") { // Jacksonville, US
+        credit = `<a href="https://www.pexels.com/photo/elevated-road-in-jacksonville-20708697/">Photo by Kelly</a>`;
+    } else if (cityID === "5809844") { // Seattle, US
+        credit = `<a href="https://www.pexels.com/photo/photo-of-seattle-skyline-2539374/">Photo by Sergei A</a>`;
+    } else if (cityID === "5746545") { // Portland, US
+        credit = `<a href="https://unsplash.com/photos/city-skyline-near-body-of-water-during-daytime-UVG1K4ejdB8">Photo by Meggyn Pomerleau</a>`;
+    } else if (cityID === "4180439") { // Atlanta, US
+        credit = `<a href="https://unsplash.com/photos/grey-high-rise-building-during-daytime-sR1Kz2auNJE">Photo by Brad Huchteman on Unsplash</a>`;
+    } else if (cityID === "4684888") { // Dallas, US
+        credit = `<a href="https://www.pexels.com/photo/aerial-photo-of-city-under-white-clouds-280193/">Photo by Pixabay</a>`;
+    } else if (cityID === "6183235") { // Winnipeg, CA
+        credit = `<a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-night-time-sM0q8DxTkWQ">Photo by Josh Lavallee on Unsplash</a>`;
+    } else if (cityID === "6167865") { // Toronto, CA
+        credit = `<a href="https://www.pexels.com/photo/panoramic-photography-of-cn-tower-614224/">Photo by Scott Webb</a>`;
+    } else if (cityID === "5969782") { // Hamilton, CA
+        credit = `<a href="https://unsplash.com/photos/white-wooden-fence-on-white-sand-beach-during-daytime-kZiVnkTx8Mw">Photo by Ahmed Abbas on Unsplash</a>`;
+    } else if (cityID === "6058560") { // London, CA
+        credit = `<a href="https://unsplash.com/photos/high-rise-buildings-under-blue-sky-during-daytime-g4I64IzqurI">Photo by Scott Webb on Unsplash</a>`;
+    } else if (cityID === "6094817") { // Ottawa, CA
+        credit = `<a href="https://www.pexels.com/photo/building-architecture-historical-tower-7328/">Photo by Splash of Rain</a>`;
+    } else if (cityID === "6077243") { // Montreal, CA
+        credit = `<a href="https://unsplash.com/photos/landscape-photography-of-skyscrapers-BG9oZ15a4Xk">Photo by Marc-Olivier Jodoin on Unsplash</a>`;
+    } else if (cityID === "6325494") { // Québec, CA
+        credit = `<a href="hhttps://unsplash.com/photos/a-large-castle-like-building-with-a-clock-tower-39ILOETJ0iU">Photo by Dana Andreea Gheorghe on Unsplash</a>`;
+    } else if (cityID === "5991055") { // Kenora, CA
+        credit = `<a href="https://unsplash.com/photos/a-body-of-water-with-trees-and-a-sunset-in-the-background-bwPXhjcKFHM">Photo by Kieran Whitford on Unsplash</a>`;
+    } else if (cityID === "5888001") { // Atikokan, CA
+        credit = `<a href="https://www.pexels.com/photo/scenic-photo-of-lake-during-dawn-2958547/">Photo by Justin Anderson</a>`;
+    } else if (cityID === "6173331") { // Vancouver, CA
+        credit = `<a href="https://www.pexels.com/photo/scenic-view-of-bridge-during-dawn-2777056/">Photo by James Wheeler</a>`;
+    } else if (cityID === "5921356") { // Chilliwack, CA
+        credit = `<a href="https://www.pexels.com/photo/body-of-water-2463851/">Photo by kristen munk</a>`;
+    } else if (cityID === "5989045") { // Kamloops, CA
+        credit = `<a href="https://unsplash.com/photos/green-trees-near-lake-under-blue-sky-during-daytime-oz07J1XUIVs">Photo by Louis Paulin on Unsplash</a>`;
+    } else if (cityID === "5990579") { // Kelowna, CA
+        credit = `<a href="https://unsplash.com/photos/black-asphalt-road-under-blue-sky-during-daytime-yHhfYzH_o-o">Photo by Kate Joyce</a>`;
+    } else if (cityID === "6113365") { // Prince George, CA
+        credit = `<a href="https://unsplash.com/photos/an-aerial-view-of-a-bridge-over-a-river-q6bicFBA-UM">Photo by Harsh Singh on Unsplash</a>`;
+    } else if (cityID === "5946768") { // Edmonton, CA
+        credit = `<a href="https://www.pexels.com/photo/the-walterdale-bridge-at-night-10584080/">Photo by Jimmy Liao</a>`;
+    } else if (cityID === "5913490") { // Calgary, CA
+        credit = `<a href="https://unsplash.com/photos/silhouette-of-high-rise-building-during-daytime-_ZBekGTBh-c">Photo by Kyler Nixon on Unsplash</a>`;
+    } else if (cityID === "5892532") { // Banff, CA
+        credit = `<a href="https://unsplash.com/photos/mountain-alp-under-cloudy-sky-Y_coTG5xEsE">Photo by Priscilla Du Preez 🇨🇦 on Unsplash</a>`;
+    } else if (cityID === "5942798") { // Drumheller, CA
+        credit = `<a href="https://unsplash.com/photos/a-scenic-view-of-the-badlands-of-the-badlands-7hAoRXIviX0">Photo by Cece Concepts on Unsplash</a>`;
+    } else if (cityID === "6141256") { // Saskatoon, CA
+        credit = `<a href="https://www.pexels.com/photo/building-photography-2609257/">Photo by Sarath SunilDutt from Pexels</a>`;
+    } else if (cityID === "6119109") { // Regina, CA
+        credit = `<a href="https://unsplash.com/photos/bare-trees-on-snow-covered-ground-during-daytime-MoQRO-fjoVE">Photo by ILLIYEEN on Unsplash</a>`;
+    } else if (cityID === "6160603") { // Swift Current, CA
+        credit = `<a href="https://unsplash.com/photos/orange-leafed-trees-Inu37-bjO2I">Photo by Erik Mclean on Unsplash</a>`;
+    } else if (cityID === "4180439") { // Yellowknife, CA
+        credit = `<a href="https://unsplash.com/photos/silhouette-of-trees-under-green-aurora-kRB26utONtw">Photo by HyunKuk Kim on Unsplash</a>`;
+    } else if (cityID === "3530597") { // Mexico City, MX
+        credit = `<a href="https://unsplash.com/photos/a-view-of-a-city-from-the-top-of-a-hill-8A4E8bGLUqY">Photo by Anton Lukin on Unsplash</a>`;
+    } else if (cityID === "3521081") { // Puebla City, MX
+        credit = `<a href="https://unsplash.com/photos/a-row-of-parked-cars-on-a-city-street-nIupUN8dcb0">Photo by Vibe Adventures on Unsplash</a>`;
+    } else if (cityID === "4180439") { // Monterrey, MX
+        credit = `<a href="https://unsplash.com/photos/birds-eye-view-of-mountain-under-cloudy-sky-vtvwNNjYBz4">Photo by Jorge G. Balleza on Unsplash</a>`;
+    } else if (cityID === "3515302") { // Toluca, MX
+        credit = `<a href="https://unsplash.com/photos/silhouette-of-mountain-YVSDD8ndlP8">Photo by Diego PH on Unsplash</a>`;
+    } else if (cityID === "3582677") { // Belize City, BZ
+        credit = `<a href="https://unsplash.com/photos/gray-concrete-building-near-green-grass-field-under-white-clouds-during-daytime-iQR6ciADh8s">Photo by Alisa Matthews on Unsplash</a>`;
+    } else if (cityID === "3588369") { // Tikal, GT
+        credit = `<a href="https://unsplash.com/photos/a-forest-of-trees-EEPqrLYe4T0">Photo by Paweł Wielądek on Unsplash</a>`;
+    } else if (cityID === "3583361") { // San Salvador, SV
+        credit = `<a href="https://unsplash.com/photos/a-sunset-view-of-a-city-with-a-mountain-in-the-background-cCXoS9uAKbc">Photo by Oswaldo Martinez on Unsplash</a>`;
+    } else if (cityID === "3590979") { // Quetzaltenango, GT
+        credit = `<a href="https://unsplash.com/photos/city-with-high-rise-buildings-under-blue-sky-during-daytime-nB9t42uAI6Y">Photo by Antonio Lopez on Unsplash</a>`;
+    } else if (cityID === "3600949") { // Tegucigalpa, HN
+        credit = `<a href="https://unsplash.com/photos/an-aerial-view-of-a-city-intersection-with-cars-kvSOLfp56uo">Photo by Héctor Emilio Gonzalez on Unsplash</a>`;
+    } else if (cityID === "3601783") { // San Pedro Sula, HN
+        credit = `<a href="https://unsplash.com/photos/a-sunset-view-of-a-city-with-a-mountain-in-the-background-cCXoS9uAKbc">Photo by Oswaldo Martinez on Unsplash</a>`;
+    } else if (cityID === "3617763") { // Managua, NI
+        credit = `<a href="https://unsplash.com/photos/a-rocky-beach-with-a-mountain-range-in-the-background-6fnHYoZa7io">Photo by Gabriella Trejoss on Unsplash</a>`;
+    } else if (cityID === "3621849") { // San José, CR
+        credit = `<a href="https://unsplash.com/photos/a-view-of-a-city-at-night-with-the-moon-in-the-sky-GA0OGHrNDHg">Photo by César Badilla Miranda on Unsplash</a>`;
+    } else if (cityID === "3703443") { // Panama City, PA
+        credit = `<a href="https://unsplash.com/photos/a-view-of-a-large-city-with-tall-buildings-YsHVc8NlxJw">Photo by Keiron Crasktellanos on Unsplash</a>`;
+    } else if (cityID === "3688689") { // Bogota, CO
+        credit = `<a href="https://unsplash.com/photos/buildings-near-mountain-GkacI-_mGlg">Photo by Random Institute on Unsplash</a>`;
+    } else if (cityID === "3451190") { // Rio de Janeiro, BR
+        credit = `<a href="https://www.pexels.com/photo/crowd-of-tourists-on-the-arpoador-beach-in-rio-de-janeiro-24039565/">Photo by Kelly</a>`;
+    } else if (cityID === "3448439") { // São Paulo, BR
+        credit = `<a href="https://unsplash.com/photos/cityscape-during-daytime-uth095lCHdM">Photo by Wylkon Cardoso on Unsplash</a>`;
+    } else if (cityID === "3871336") { // Santiago, CL
+        credit = `<a href="https://unsplash.com/photos/a-park-with-a-lot-of-tall-buildings-in-the-background-WwBVfh1eyq8">Photo by Daniel Prado on Unsplash</a>`;
+    } else if (cityID === "1609350") { // Bangkok, TH
+        credit = `<a href="https://www.pexels.com/photo/an-aerial-shot-of-a-city-at-night-7702640/">Photo by Eyal Sberro</a>`;
+   } else {
         credit = "Error: Image credit not found";
     }
 
