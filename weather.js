@@ -1,7 +1,10 @@
 // AI Disclosure: I used ChatGPT to help troubleshoot some syntax errors, and to help me understand the API. Everything else (most of it) of the code, API and research is my own.
 
+let cityID;
+
 document.addEventListener('DOMContentLoaded', () => {
     getWeather();
+    getCredit();
 });
 
 async function getWeather() { // Here I am adding location IDs from OpenWeatherMap
@@ -149,8 +152,7 @@ async function getWeather() { // Here I am adding location IDs from OpenWeatherM
 
     ];
 
-
-    const cityID = cities[Math.floor(Math.random() * cities.length)]; // This generates a random location from the list
+    cityID = cities[Math.floor(Math.random() * cities.length)]; // This generates a random location from the list
 
     try {
         const response = await fetch(`/data/${cityID}.json`);
@@ -194,4 +196,100 @@ function displayWeather(data) {
 
     
     document.body.style.backgroundImage = `url('images/${cityName}${country}.jpeg')`; // This sets the background image based on the location
+}
+
+let credit;
+async function getCredit() { // loads image credit, not the most efficient, but it works
+    console.log("cityID:", cityID); // for debugging
+    if (cityID === "2643743") { // London, GB
+        credit = `<a href="https://www.pexels.com/photo/city-view-at-london-672532/">Photo by Dominika Gregušová</a>`;
+    } else if (cityID === "2964574") { // Dublin, IE
+        credit = `<a href="https://unsplash.com/photos/a-path-in-a-park-with-lots-of-trees-aNa2d96Jf_k">Photo by Valerie on Unsplash</a>`;
+    } else if (cityID === "2988507") { // Paris, FR
+        credit = `<a href="https://unsplash.com/photos/eiffel-tower-paris-france-nnzkZNYWHaU">Photo by Chris Karidis on Unsplash</a>`;
+    } else if (cityID === "2972315") { // Toulouse, FR
+        credit = `<a href="https://unsplash.com/photos/brown-concrete-statue-UUZ7Ft7Ssj4">Photo by DAT VO on Unsplash</a>`;
+    } else if (cityID === "2996944") { // Lyon, FR
+        credit = `<a href="https://unsplash.com/photos/aerial-photography-of-city-9YR74pUJxnc">Photo by Julien Rocheblave on Unsplash</a>`;
+    } else if (cityID === "3007477") { // Laon, FR
+        credit = `<a href="https://unsplash.com/photos/white-and-brown-concrete-structure-during-day-hCh_PHIhoLI">Photo by Adrien Tutin on Unsplash</a>`;
+    } else if (cityID === "2661552") { // Bern, CH
+        credit = `<a href="https://www.pexels.com/photo/silver-vehicle-on-concrete-arch-bridge-1291766/">Photo by Matheus Guimarães</a>`;
+    } else if (cityID === "2660646") { // Geneva, CH
+        credit = `<a href="https://unsplash.com/photos/boat-on-water-AWjVCFcUIbY">Photo by visualsoflukas on Unsplash</a>`;
+    } else if (cityID === "3169070") { // Rome, IT
+        credit = `<a href="https://www.pexels.com/photo/colosseum-rome-italy-2064827/">Photo by Davi Pimentel</a>`;
+    } else if (cityID === "3173435") { // Milan, IT
+        credit = `<a href="https://unsplash.com/photos/a-river-running-through-a-city-next-to-tall-buildings-LUbSoMLJGyI">Photo by mathieu gauzy on Unsplash</a>`;
+    } else if (cityID === "3176219") { // Genoa, IT
+        credit = `<a href="https://unsplash.com/photos/white-and-pink-concrete-buildings-during-daytime-FEzvd2O3C2Y">Photo by Jessie Brown on Unsplash</a>`;
+    } else if (cityID === "3183299") { // Alessandria, IT
+        credit = `<a href="https://unsplash.com/photos/a-bridge-over-a-river-lnw2lsj2GB0">Photo by Aho on Unsplash</a>`;
+    } else if (cityID === "2761369") { // Vienna, AT
+        credit = `<a href="https://www.pexels.com/photo/skyline-of-donau-city-vienna-austria-19140965/">Photo by Maximilian Jähnichen</a>`;
+    } else if (cityID === "290030") { // Doha, QA
+        credit = `<a href="https://unsplash.com/photos/a-city-skyline-at-night-5jvAmqV4W-c">Photo by Hongbin on Unsplash</a>`;
+    } else if (cityID === "3054643") { // Budapest, HU
+        credit = `<a href="https://www.pexels.com/photo/town-near-river-during-night-time-774856/">Photo by Amir H. Bakhtiari</a>`;
+    } else if (cityID === "2332459") { // Lagos, NG
+        credit = `<a href="https://www.pexels.com/photo/aerial-view-of-the-carter-bridge-connecting-lagos-island-to-the-mainland-22681398/">Photo by Ben Iwara</a>`;
+    } else if (cityID === "1275339") { // Mumbai, IN
+        credit = `<a href="https://www.pexels.com/photo/low-angle-shot-of-the-gateway-of-india-10587328/">Photo by Thé Aditya Jadhav</a>`;
+    } else if (cityID === "5128581") { // New York, US
+        credit = `<a href="https://www.pexels.com/photo/the-world-trade-center-new-york-1058278/">Photo by Marcus Herzberg</a>`;
+    } else if (cityID === "5879400") { // Anchorage, US
+        credit = `<a href="https://www.pexels.com/photo/green-trees-near-lake-4027720/">Photo by Sara Loeffler</a>`;
+    } else if (cityID === "5861897") { // Fairbanks, US
+        credit = `<a href="https://unsplash.com/photos/green-trees-beside-lake-under-blue-sky-during-daytime-F3vX4TL4qYo">Photo by James Pack on Unsplash</a>`;
+    } else if (cityID === "5454711") { // Las Vegas, US
+        credit = `<a href="https://www.pexels.com/photo/view-of-metropolitan-area-at-night-2540653/">Photo by Dave Morgan</a>`;
+    } else if (cityID === "5506956") { // Albuquerque, US
+        credit = `<a href="https://unsplash.com/photos/aerial-view-of-city-during-daytime-a1Mrycbix-w">Photo by Gabriel Griego on Unsplash</a>`;
+    } else if (cityID === "5419384") { // Denver, US
+        credit = `<a href="https://unsplash.com/photos/the-sun-is-setting-over-a-large-city-OVE2SA0TVJE">Photo by Nils Huenerfuerst on Unsplash</a>`;
+    } else if (cityID === "5391959") { // San Francisco, US
+        credit = `<a href="https://unsplash.com/photos/golden-gate-bridge-san-francisco-california-NrrwM3GMDcM">Photo by Peter Emery on Unsplash</a>`;
+    } else if (cityID === "4887398") { // Chicago, US
+        credit = `<a href="https://www.pexels.com/photo/city-with-river-in-middle-during-cloudy-day-167200/">Photo by Grzegorz Zdanowski</a>`;
+    } else if (cityID === "5263045") { // Milwaukee, US
+        credit = `<a href="https://www.pexels.com/photo/city-landscape-290144/">Photo by Pixabay</a>`;
+    } else if (cityID === "4990729") { // Detroit, US
+        credit = `<a href="https://www.pexels.com/photo/cityscape-of-detroit-at-dusk-15020901/">Photo by Shan Nir</a>`;
+    } else if (cityID === "5037649") { // Minneapolis, US
+        credit = `<a href="https://www.pexels.com/photo/aerial-photography-of-moving-cars-on-the-bridge-over-river-4320303/">Photo by Josh Hild</a>`;
+    } else if (cityID === "5028500") { // Grand Marais, US
+        credit = `<a href="https://unsplash.com/photos/body-of-water-under-brown-sky-at-golden-hour-8ddNUbiWs8c">Photo by Andrew Ling on Unsplash</a>`;
+    } else if (cityID === "5047308") { // Silver Bay, US
+        credit = `<a href="https://unsplash.com/photos/green-and-brown-mountain-beside-sea-during-daytime-brBsveD19cg">Photo by Brandon Cormier on Unsplash</a>`;
+    } else if (cityID === "5050817") { // Two Harbors, US
+        credit = `<a href="https://unsplash.com/photos/waterfalls-near-green-trees-under-white-sky-during-daytime-ANJ2-RFYZFI">Photo by Cody Otto on Unsplash</a>`;
+    } else if (cityID === "5275191") { // Superior, US
+        credit = `<a href="https://www.pexels.com/photo/drone-shot-of-the-wisconsin-point-light-in-superior-on-wisconsin-point-in-douglas-county-wisconsin-19784150/">Photo by Bl∡ke</a>`;
+    } else if (cityID === "4996572") { // Houghton, US
+        credit = `<a href="https://unsplash.com/photos/white-bridge-over-river-under-white-sky-during-daytime-wjyHa3GqOTI">Photo by Elijah Cobb on Unsplash</a>`;
+    } else if (cityID === "4393217") { // Kansas City, US
+        credit = `<a href="https://www.pexels.com/photo/city-skyline-under-blue-sky-5660080/">Photo by Giancarlo Rojas</a>`;
+    } else if (cityID === "4544349") { // Oklahoma City, US
+        credit = `<a href="https://unsplash.com/photos/eagle-eye-view-time-lapse-city-and-streets-OSNZjXCF5VE">Photo by Gerson Repreza on Unsplash</a>`;
+    } else if (cityID === "4407066") { // St. Louis, US
+        credit = `<a href="https://unsplash.com/photos/a-view-of-the-st-louis-skyline-from-across-the-st-louis-river-JSBFK4DR7qU">Photo by Kenny Nguyễn on Unsplash</a>`;
+    } else if (cityID === "4259418") { // Indianapolis, US
+        credit = `<a href="https://www.pexels.com/photo/bird-s-eye-view-photography-of-lighted-city-3573383/">Photo by Josh Hild</a>`;
+    } else if (cityID === "4508722") { // Cincinnati, US
+        credit = `<a href="https://www.pexels.com/photo/photo-of-lighted-buildings-near-river-2570704/">Photo by Dave Morgan</a>`;
+    } else if (cityID === "4509177") { // Columbus, US
+        credit = `<a href="https://unsplash.com/photos/aerial-view-photo-of-city-buildings-during-nighttime-EEenrxFJDHE">Photo by Ellie Brown on Unsplash</a>`;
+    } else if (cityID === "5206379") { // Pittsburgh, US
+        credit = `<a href="https://unsplash.com/photos/aerial-photo-of-bridge-and-buildings-under-blue-sky-9HGqJq3vglc">Photo by Vidar Nordli-Mathisen on Unsplash</a>`;
+    } else if (cityID === "4560349") { // Philadelphia, US
+        credit = `<a href="https://www.pexels.com/photo/contemporary-architecture-of-megapolis-with-skyscrapers-4642403/">Photo by Kelly</a>`;
+    } else if (cityID === "4930956") { // Boston, US
+        credit = `<a href="https://www.pexels.com/photo/aerial-view-of-city-buildings-5627116/">Photo by Andrés García</a>`;
+    } else if (cityID === "4835797") { // Hartford, US
+        credit = `<a href="https://unsplash.com/photos/aerial-view-of-city-buildings-during-daytime-jeJWWrldemw">Photo by Balazs Busznyak on Unsplash</a>`;
+    } else {
+        credit = "Error: Image credit not found";
+    }
+
+    document.getElementById("credit").innerHTML = credit;
 }
