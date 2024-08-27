@@ -5,6 +5,7 @@ let cityID;
 document.addEventListener('DOMContentLoaded', () => {
     getWeather();
     getCredit();
+    getPopulation();
 });
 
 async function getWeather() { // Here I am adding location IDs from OpenWeatherMap
@@ -185,6 +186,7 @@ function displayWeather(data) {
 
     const weatherInfo = `
         <h2><a href="https://nominatim.openstreetmap.org/ui/reverse.html?format=html&lat=${coordLat}&lon=${coordLon}">${cityName}, ${country}</a></h2>
+        <h3>Population ${population}</h3>
         <h3>${weather}</h2>
         <br>
         <p>Current Temperature: ${currentTempC.toFixed(1)}°C / ${currentTempF.toFixed(1)}°F</p>
@@ -484,4 +486,291 @@ async function getCredit() { // loads image credit, not the most efficient, but 
     }
 
     document.getElementById("credit").innerHTML = credit;
+}
+
+let population;
+async function getPopulation() { // loads location population, not the most efficient, but it works
+    if (cityID === "2643743") { // London, GB
+        population = `8,866,180`;
+    } else if (cityID === "2964574") { // Dublin, IE
+        population = `592,713`;
+    } else if (cityID === "2988507") { // Paris, FR
+        population = `2,102,650`;
+    } else if (cityID === "2972315") { // Toulouse, FR
+        population = `504,078`;
+    } else if (cityID === "2996944") { // Lyon, FR
+        population = `522,250`;
+    } else if (cityID === "3007477") { // Laon, FR
+        population = `24,021`;
+    } else if (cityID === "2661552") { // Bern, CH
+        population = `133,883`;
+    } else if (cityID === "2660646") { // Geneva, CH
+        population = `201,741`;
+    } else if (cityID === "3169070") { // Rome, IT
+        population = `4,342,212`;
+    } else if (cityID === "3173435") { // Milan, IT
+        population = `4,336,121`;
+    } else if (cityID === "3176219") { // Genoa, IT
+        population = `580,097`;
+    } else if (cityID === "3183299") { // Alessandria, IT
+        population = `92,104`;
+    } else if (cityID === "2761369") { // Vienna, AT
+        population = `2,890,577`;
+    } else if (cityID === "290030") { // Doha, QA
+        population = `1,186,023`;
+    } else if (cityID === "3054643") { // Budapest, HU
+        population = `1,685,342`;
+    } else if (cityID === "2332459") { // Lagos, NG
+        population = `8,048,430`;
+    } else if (cityID === "1275339") { // Mumbai, IN
+        population = `12,442,373`;
+    } else if (cityID === "5128581") { // New York, US
+        population = `8,804,190`;
+    } else if (cityID === "5879400") { // Anchorage, US
+        population = `291,247`;
+    } else if (cityID === "5861897") { // Fairbanks, US
+        population = `32,515`;
+    } else if (cityID === "5454711") { // Las Vegas, US
+        population = `641,903`;
+    } else if (cityID === "5506956") { // Albuquerque, US
+        population = `564,559`;
+    } else if (cityID === "5419384") { // Denver, US
+        population = `715,522`;
+    } else if (cityID === "5391959") { // San Francisco, US
+        population = `873,965`;
+    } else if (cityID === "4887398") { // Chicago, US
+        population = `2,746,388`;
+    } else if (cityID === "5263045") { // Milwaukee, US
+        population = `577,222`;
+    } else if (cityID === "4990729") { // Detroit, US
+        population = `639,111`;
+    } else if (cityID === "5037649") { // Minneapolis, US
+        population = `429,954`;
+    } else if (cityID === "5028500") { // Grand Marais, US
+        population = `1,337`;
+    } else if (cityID === "5047308") { // Silver Bay, US
+        population = `1,857`;
+    } else if (cityID === "5050817") { // Two Harbors, US
+        population = `3,633`;
+    } else if (cityID === "5275191") { // Superior, US
+        population = `26,751`;
+    } else if (cityID === "4996572") { // Houghton, US
+        population = `8,386`;
+    } else if (cityID === "4393217") { // Kansas City, US
+        population = `508,090`;
+    } else if (cityID === "4544349") { // Oklahoma City, US
+        population = `681,054`;
+    } else if (cityID === "4407066") { // St. Louis, US
+        population = `301,578`;
+    } else if (cityID === "4259418") { // Indianapolis, US
+        population = `887,642`;
+    } else if (cityID === "4508722") { // Cincinnati, US
+        population = `309,317`;
+    } else if (cityID === "4509177") { // Columbus, US
+        population = `905,748`;
+    } else if (cityID === "5206379") { // Pittsburgh, US
+        population = `302,971`;
+    } else if (cityID === "4560349") { // Philadelphia, US
+        population = `1,603,797`;
+    } else if (cityID === "4930956") { // Boston, US
+        population = `675,647`;
+    } else if (cityID === "4835797") { // Hartford, US
+        population = `121,054`;
+    } else if (cityID === "4781756") { // Richmond, US
+        population = `226,610`;
+    } else if (cityID === "4460243") { // Charlotte, US
+        population = `874,579`;
+    } else if (cityID === "4574324") { // Charleston, US
+        population = `150,227`;
+    } else if (cityID === "4160021") { // Jacksonville, US
+        population = `949,611`;
+    } else if (cityID === "5809844") { // Seattle, US
+        population = `737,015`;
+    } else if (cityID === "5746545") { // Portland, US
+        population = `652,503`;
+    } else if (cityID === "4180439") { // Atlanta, US
+        population = `498,715`;
+    } else if (cityID === "4684888") { // Dallas, US
+        population = `1,304,379`;
+    } else if (cityID === "6183235") { // Winnipeg, CA
+        population = `749,607`;
+    } else if (cityID === "6167865") { // Toronto, CA
+        population = `2,794,356`;
+    } else if (cityID === "5969782") { // Hamilton, CA
+        population = `569,353`;
+    } else if (cityID === "6058560") { // London, CA
+        population = `422,324`;
+    } else if (cityID === "6094817") { // Ottawa, CA
+        population = `1,017,449`;
+    } else if (cityID === "6077243") { // Montreal, CA
+        population = `1,762,949`;
+    } else if (cityID === "6325494") { // Québec, CA
+        population = `549,459`;
+    } else if (cityID === "5991055") { // Kenora, CA
+        population = `14,967`;
+    } else if (cityID === "5888001") { // Atikokan, CA
+        population = `2,642`;
+    } else if (cityID === "6173331") { // Vancouver, CA
+        population = `662,248`;
+    } else if (cityID === "5921356") { // Chilliwack, CA
+        population = `93,203`;
+    } else if (cityID === "5989045") { // Kamloops, CA
+        population = `97,902`;
+    } else if (cityID === "5990579") { // Kelowna, CA
+        population = `144,576`;
+    } else if (cityID === "6113365") { // Prince George, CA
+        population = `76,708`;
+    } else if (cityID === "5946768") { // Edmonton, CA
+        population = `1,010,899`;
+    } else if (cityID === "5913490") { // Calgary, CA
+        population = `1,306,784`;
+    } else if (cityID === "5892532") { // Banff, CA
+        population = `8,305`;
+    } else if (cityID === "5942798") { // Drumheller, CA
+        population = `7,909`;
+    } else if (cityID === "6141256") { // Saskatoon, CA
+        population = `266,141`;
+    } else if (cityID === "6119109") { // Regina, CA
+        population = `226,404`;
+    } else if (cityID === "6160603") { // Swift Current, CA
+        population = `16,750`;
+    } else if (cityID === "4180439") { // Yellowknife, CA
+        population = `20,340`;
+    } else if (cityID === "3530597") { // Mexico City, MX
+        population = `9,209,944`;
+    } else if (cityID === "3521081") { // Puebla City, MX
+        population = `1,692,181`;
+    } else if (cityID === "4180439") { // Monterrey, MX
+        population = `1,142,952`;
+    } else if (cityID === "3515302") { // Toluca, MX
+        population = `223,876`;
+    } else if (cityID === "3582677") { // Belize City, BZ
+        population = `61,461`;
+    } else if (cityID === "3588369") { // Tikal, GT
+        population = `N/A`;
+    } else if (cityID === "3583361") { // San Salvador, SV
+        population = `525,990`;
+    } else if (cityID === "3590979") { // Quetzaltenango, GT
+        population = `180,706`;
+    } else if (cityID === "3600949") { // Tegucigalpa, HN
+        population = `1,326,460`;
+    } else if (cityID === "3601783") { // San Pedro Sula, HN
+        population = `834,883`;
+    } else if (cityID === "3617763") { // Managua, NI
+        population = `1,061,054`;
+    } else if (cityID === "3621849") { // San José, CR
+        population = `352,381`;
+    } else if (cityID === "3703443") { // Panama City, PA
+        population = `1,086,990`;
+    } else if (cityID === "3688689") { // Bogota, CO
+        population = `8,034,649`;
+    } else if (cityID === "3451190") { // Rio de Janeiro, BR
+        population = `6,211,223`;
+    } else if (cityID === "3448439") { // São Paulo, BR
+        population = `11,451,999`;
+    } else if (cityID === "3871336") { // Santiago, CL
+        population = `6,269,384`;
+    } else if (cityID === "1609350") { // Bangkok, TH
+        population = `8,305,218`;
+    } else if (cityID === "1791247") { // Wuhan, CN
+        population = `13,739,000`;
+    } else if (cityID === "1850147") { // Tokyo, JP
+        population = `14,094,034`;
+    } else if (cityID === "1668341") { // Taipei, TW
+        population = `2,494,813`;
+    } else if (cityID === "2147714") { // Sydney, AU
+        population = `5,450,496`;
+    } else if (cityID === "2158177") { // Melbourne, AU
+        population = `5,207,145`;
+    } else if (cityID === "2179537") { // Wellington, NZ
+        population = `215,200`;
+    } else if (cityID === "1791247") { // Oslo, NO
+        population = `709,037`;
+    } else if (cityID === "3161733") { // Bergen, NO
+        population = `291,940`;
+    } else if (cityID === "2673730") { // Stockholm, SE
+        population = `984,748`;
+    } else if (cityID === "2666199") { // Uppsala, SE
+        population = `177,074`;
+    } else if (cityID === "2711537") { // Göteborg (Gothenburg), SE
+        population = `604,616`;
+    } else if (cityID === "643492") { // Oulu, FI
+        population = `214,633`;
+    } else if (cityID === "658225") { // Helsinki, FI
+        population = `674,500`;
+    } else if (cityID === "660158") { // Espoo, FI
+        population = `314,024`;
+    } else if (cityID === "633679") { // Turku, FI
+        population = `201,863`;
+    } else if (cityID === "634963") { // Tampere, FI
+        population = `255,050`;
+    } else if (cityID === "646005") { // Mikkeli, FI
+        population = `51,919`;
+    } else if (cityID === "588409") { // Tallinn, EE
+        population = `453,864`;
+    } else if (cityID === "588335") { // Tartu, EE
+        population = `97,435`;
+    } else if (cityID === "456172") { // Riga, LV
+        population = `605,273`;
+    } else if (cityID === "460413") { // Daugavpils, LV
+        population = `77,799`;
+    } else if (cityID === "2618425") { // Copenhagen, DE
+        population = `660,842`;
+    } else if (cityID === "2950159") { // Berlin, DE
+        population = `3,878,100`;
+    } else if (cityID === "3413829") { // Reykjavik, IS
+        population = `139,875`;
+    } else if (cityID === "2625252") { // Vik, IS
+        population = `318`;
+    } else if (cityID === "3413604") { // Selfoss, IS
+        population = `9,683`;
+    } else if (cityID === "2633274") { // Akureyri, IS
+        population = `19,219`;
+    } else if (cityID === "292223") { // Dubai, AE
+        population = `3,604,030`;
+    } else if (cityID === "3117735") { // Madrid, ES
+        population = `3,223,334`;
+    } else if (cityID === "2797656") { // Ghent, BE
+        population = `265,086`;
+    } else if (cityID === "2800866") { // Brussels, BE
+        population = `1,249,597`;
+    } else if (cityID === "2925533") { // Frankfurt am Main, DE
+        population = `1,249,597`;
+    } else if (cityID === "2910831") { // Hanover (Hannover), DR
+        population = `545,045`;
+    } else if (cityID === "2775220") { // Innsbruck, AT
+        population = `132,493`;
+    } else if (cityID === "2659994") { // Lausanne, CH
+        population = `139,111`;
+    } else if (cityID === "3172394") { // Naples, IT
+        population = `909,048`;
+    } else if (cityID === "3165524") { // Turin, IT
+        population = `846,916`;
+    } else if (cityID === "650946") { // Kotka, FI
+        population = `50,500`;
+    } else if (cityID === "648090") { // Lieksa, FI
+        population = `10,228`;
+    } else if (cityID === "756135") { // Warsaw, PL
+        population = `1,863,056`;
+    } else if (cityID === "2750053") { // Nijmegen, NL
+        population = `177,359`;
+    } else if (cityID === "2755003") { // Haarlem, NL
+        population = `162,543`;
+    } else if (cityID === "5604045") { // Pocatello, US
+        population = `56,320`;
+    } else if (cityID === "3553478") { // Havana, CU
+        population = `1,814,207`;
+    } else if (cityID === "4174757") { // Tampa, US
+        population = `384,959`;
+    } else if (cityID === "5959974") { // Gatineau, CA
+        population = `291,041`;
+    } else if (cityID === "2641455") { // Norfolk, GB
+        population = `925,299`;
+    } else if (cityID === "5947866") { // Elliot Lake, CA
+        population = `11,372`;
+   } else {
+        population = "Error: Population not found";
+    }
+
+    document.getElementById("population").innerHTML = population;
 }
