@@ -364,9 +364,9 @@ async function getCredit() { // loads image credit, not the most efficient, but 
     } else if (cityID === "3590979") { // Quetzaltenango, GT
         credit = `<a href="https://unsplash.com/photos/city-with-high-rise-buildings-under-blue-sky-during-daytime-nB9t42uAI6Y">Photo by Antonio Lopez on Unsplash</a>`;
     } else if (cityID === "3600949") { // Tegucigalpa, HN
-        credit = `<a href="https://unsplash.com/photos/an-aerial-view-of-a-city-intersection-with-cars-kvSOLfp56uo">Photo by Héctor Emilio Gonzalez on Unsplash</a>`;
+        credit = `<a href="https://unsplash.com/photos/a-view-of-a-city-with-mountains-in-the-background--oOvoeyUwowo">Photo by Héctor Emilio Gonzalez on Unsplash</a>`;
     } else if (cityID === "3601783") { // San Pedro Sula, HN
-        credit = `<a href="https://unsplash.com/photos/a-sunset-view-of-a-city-with-a-mountain-in-the-background-cCXoS9uAKbc">Photo by Oswaldo Martinez on Unsplash</a>`;
+        credit = `<a href="https://unsplash.com/photos/an-aerial-view-of-a-city-intersection-with-cars-kvSOLfp56uo">Photo by Oswaldo Martinez on Unsplash</a>`;
     } else if (cityID === "3617763") { // Managua, NI
         credit = `<a href="https://unsplash.com/photos/a-rocky-beach-with-a-mountain-range-in-the-background-6fnHYoZa7io">Photo by Gabriella Trejoss on Unsplash</a>`;
     } else if (cityID === "3621849") { // San José, CR
@@ -383,6 +383,102 @@ async function getCredit() { // loads image credit, not the most efficient, but 
         credit = `<a href="https://unsplash.com/photos/a-park-with-a-lot-of-tall-buildings-in-the-background-WwBVfh1eyq8">Photo by Daniel Prado on Unsplash</a>`;
     } else if (cityID === "1609350") { // Bangkok, TH
         credit = `<a href="https://www.pexels.com/photo/an-aerial-shot-of-a-city-at-night-7702640/">Photo by Eyal Sberro</a>`;
+    } else if (cityID === "1791247") { // Wuhan, CN
+        credit = `<a href="https://unsplash.com/photos/city-during-night-XVaZU6DNOJ0">Photo by Benjamin Chris on Unsplash</a>`;
+    } else if (cityID === "1850147") { // Tokyo, JP
+        credit = `<a href="https://www.pexels.com/photo/people-walking-on-street-near-buildings-2339009/">Photo by Aleksandar Pasaric</a>`;
+    } else if (cityID === "1668341") { // Taipei, TW
+        credit = `<a href="https://www.pexels.com/photo/panoramic-view-of-taipei-taiwan-15586112/">Photo by Jimmy Liao</a>`;
+    } else if (cityID === "2147714") { // Sydney, AU
+        credit = `<a href="https://www.pexels.com/photo/white-sydney-opera-house-2193300/">Photo by Rijan Hamidovic</a>`;
+    } else if (cityID === "2158177") { // Melbourne, AU
+        credit = `<a href="https://www.pexels.com/photo/lighted-bridge-over-river-in-the-city-during-night-time-3809777/">Photo by Mitchell Luo</a>`;
+    } else if (cityID === "2179537") { // Wellington, NZ
+        credit = `<a href="https://www.pexels.com/photo/wellington-cityscape-at-dusk-4350631/">Photo by Lucas W</a>`;
+    } else if (cityID === "1791247") { // Oslo, NO
+        credit = `<a href="https://www.pexels.com/photo/bridge-over-aker-river-near-buildings-5683079/">Photo by Boris K.</a>`;
+    } else if (cityID === "3161733") { // Bergen, NO
+        credit = `<a href="https://www.pexels.com/photo/harbor-of-bergen-13110085/">Photo by Nørsky Nørdwind</a>`;
+    } else if (cityID === "2673730") { // Stockholm, SE
+        credit = `<a href="https://unsplash.com/photos/scenery-of-a-body-of-water-beside-a-city-jxfe3orC4G8">Photo by Jon Flobrant on Unsplash</a>`;
+    } else if (cityID === "2666199") { // Uppsala, SE
+        credit = `<a href="https://unsplash.com/photos/black-and-white-concrete-building-2PxpNkO-DtU">Photo by Shubhesh Aggarwal on Unsplash</a>`;
+    } else if (cityID === "2711537") { // Göteborg (Gothenburg), SE
+        credit = `<a href="https://unsplash.com/photos/river-surrounded-by-concrete-buildings-during-daytime-20qv9cTILhU">Photo by Jonas Jacobsson on Unsplash</a>`;
+    } else if (cityID === "643492") { // Oulu, FI
+        credit = `<a href="https://unsplash.com/photos/an-aerial-view-of-a-city-4KvkBzx0Ba8">Photo by Janne Leimola on Unsplash</a>`;
+    } else if (cityID === "658225") { // Helsinki, FI
+        credit = `<a href="https://unsplash.com/photos/aerial-photography-of-street-at-night-covered-with-snow-w6KSwwnQyaE">Photo by Alexandr Bormotin on Unsplash</a>`;
+    } else if (cityID === "660158") { // Espoo, FI
+        credit = `<a href="https://unsplash.com/photos/super-highway-during-golden-hour-jmvzOHl_w7g">Photo by Julius Jansson on Unsplash</a>`;
+    } else if (cityID === "633679") { // Turku, FI
+        credit = `<a href="https://unsplash.com/photos/a-river-running-through-a-city-with-a-clock-tower-in-the-background-OjRlFFuynik">Photo by Jamo Images on Unsplash</a>`;
+    } else if (cityID === "634963") { // Tampere, FI
+        credit = `<a href="https://unsplash.com/photos/white-and-red-boat-on-water-near-building-during-daytime-oXEfEJ-hE7Q">Photo by Sini Tiainen on Unsplash</a>`;
+    } else if (cityID === "646005") { // Mikkeli, FI
+        credit = `<a href="https://unsplash.com/photos/green-trees-near-body-of-water-rGiL6cLnK8I">Photo by Lauri Sievinen on Unsplash</a>`;
+    } else if (cityID === "588409") { // Tallinn, EE
+        credit = `<a href="https://unsplash.com/photos/brown-and-white-concrete-houses-under-gray-sky-gCTXpJCP3yI">Photo by Andres Garcia on Unsplash</a>`;
+    } else if (cityID === "588335") { // Tartu, EE
+        credit = `<a href="https://unsplash.com/photos/there-is-a-sign-that-says-tartuga-in-a-town-square-CDA0NYntMPM">Photo by Marek Lumi on Unsplash</a>`;
+    } else if (cityID === "456172") { // Riga, LV
+        credit = `<a href="https://unsplash.com/photos/aerial-photo-of-city-under-cloudy-sky-jFqUJacYIsw">Photo by Gilly on Unsplash</a>`;
+    } else if (cityID === "460413") { // Daugavpils, LV
+        credit = `<a href="https://unsplash.com/photos/a-sunset-view-of-a-city-with-a-mountain-in-the-background-cCXoS9uAKbc">Photo by Oswaldo Martinez on Unsplash</a>`;
+    } else if (cityID === "2618425") { // Copenhagen, DE
+        credit = `<a href="https://www.pexels.com/photo/photo-of-boats-during-daytime-3117216/">Photo by Daniel Jurin</a>`;
+    } else if (cityID === "2950159") { // Berlin, DE
+        credit = `<a href="https://unsplash.com/photos/time-lapse-photography-of-vehicle-at-the-road-in-between-the-building-at-nighttime-aerial-photography-iPOZf3tQfHA">Photo by Stephan Widua on Unsplash</a>`;
+    } else if (cityID === "3413829") { // Reykjavik, IS
+        credit = `<a href="https://www.pexels.com/photo/reykjavik-cityscape-with-expressionist-neo-gothic-style-hallgrimskirkja-church-20165201/">Photo by Jón T Jónsson</a>`;
+    } else if (cityID === "2625252") { // Vik, IS
+        credit = `<a href="https://unsplash.com/photos/a-mountain-range-with-a-body-of-water-in-the-foreground-Ou-KEC_yxXo">Photo by Henrique Ferreira on Unsplash</a>`;
+    } else if (cityID === "3413604") { // Selfoss, IS
+        credit = `<a href="https://unsplash.com/photos/a-waterfall-with-a-large-amount-of-water-coming-out-of-it-MCK9BjMCed0">Photo by Luca Florio on Unsplash</a>`;
+    } else if (cityID === "2633274") { // Akureyri, IS
+        credit = `<a href="https://unsplash.com/photos/field-and-mountain-near-body-of-water-meOFNlRbHmY">Photo by Josh Reid on Unsplash</a>`;
+    } else if (cityID === "292223") { // Dubai, AE
+        credit = `<a href="https://www.pexels.com/photo/timelapse-cityscape-photography-during-night-time-599982/">Photo by Kostiantyn Stupak</a>`;
+    } else if (cityID === "3117735") { // Madrid, ES
+        credit = `<a href="https://unsplash.com/photos/aerial-photography-of-vehicles-passing-between-high-rise-buildings-WBGjg0DsO_g">Photo by Florian Wehde on Unsplash</a>`;
+    } else if (cityID === "2797656") { // Ghent, BE
+        credit = `<a href="https://www.pexels.com/photo/traditional-tenements-in-sunlight-in-ghent-12914496/">Photo by Siena Ramsey</a>`;
+    } else if (cityID === "2800866") { // Brussels, BE
+        credit = `<a href="https://pixabay.com/photos/belgium-brussels-architecture-3599416/">Image by Dimitris Vetsikas from Pixabay</a>`;
+    } else if (cityID === "2925533") { // Frankfurt am Main, DE
+        credit = `<a href="https://www.pexels.com/photo/city-portrait-2106452/">Photo by juv</a>`;
+    } else if (cityID === "2910831") { // Hanover (Hannover), DR
+        credit = `<a href="https://www.pexels.com/photo/new-town-hall-in-hanover-germany-17360696/">Photo by Daniel Lengies</a>`;
+    } else if (cityID === "2775220") { // Innsbruck, AT
+        credit = `<a href="https://www.pexels.com/photo/colorful-buildings-in-innsbruck-in-austria-19059264/">Photo by Larissa Farber</a>`;
+    } else if (cityID === "2659994") { // Lausanne, CH
+        credit = `<a href="https://unsplash.com/photos/valletta-next-to-a-body-of-water-WyexUIm5IkQ">Photo by SnapSaga on Unsplash</a>`;
+    } else if (cityID === "3172394") { // Naples, IT
+        credit = `<a href="https://unsplash.com/photos/aerial-photography-of-city-buildings-jPRFJ54o6M8">Photo by Montse Monmo on Unsplash</a>`;
+    } else if (cityID === "3165524") { // Turin, IT
+        credit = `<a href="https://pixabay.com/photos/turin-italy-architecture-monuments-3668082/">Image by teojab from Pixabay</a>`;
+    } else if (cityID === "650946") { // Kotka, FI
+        credit = `<a href="https://unsplash.com/photos/gray-concrete-building-ZQL7foP1qaA">Photo by Tapio Haaja on Unsplash</a>`;
+    } else if (cityID === "648090") { // Lieksa, FI
+        credit = `<a href="https://pixabay.com/photos/lieksa-finland-summer-2366842/">Image by Lucinda from Pixabay</a>`;
+    } else if (cityID === "756135") { // Warsaw, PL
+        credit = `<a href="hhttps://unsplash.com/photos/high-rise-buildings-during-night-time-xcPw1-5OHTk">Photo by Kamil Gliwiński on Unsplash</a>`;
+    } else if (cityID === "2750053") { // Nijmegen, NL
+        credit = `<a href="https://unsplash.com/photos/aerial-view-of-city-buildings-near-body-of-water-during-daytime-tXK33aOVJUo">Photo by Richard Brunsveld on Unsplash</a>`;
+    } else if (cityID === "2755003") { // Haarlem, NL
+        credit = `<a href="https://unsplash.com/photos/people-walking-on-sidewalk-near-building-during-daytime-GD2oZlLbR0I">Photo by Marc Kleen on Unsplash</a>`;
+    } else if (cityID === "5604045") { // Pocatello, US
+        credit = `<a href="https://unsplash.com/photos/brown-concrete-building-under-blue-sky-during-daytime-Hp5eU3mcxsg">Photo by Mitchell Kmetz on Unsplash</a>`;
+    } else if (cityID === "3553478") { // Havana, CU
+        credit = `<a href="https://unsplash.com/photos/top-view-of-buildings-under-cloudy-sky-ejIi27O6qlI">Photo by JF Martin on Unsplash</a>`;
+    } else if (cityID === "4174757") { // Tampa, US
+        credit = `<a href="https://unsplash.com/photos/buildings-near-body-of-water-VHFBDTwiIy4">Photo by Kody Cheyne on Unsplash</a>`;
+    } else if (cityID === "5959974") { // Gatineau, CA
+        credit = `<a href="https://pixabay.com/photos/bench-bridge-structure-metal-steel-5709659/">Image by Gabriel Macias from Pixabay</a>`;
+    } else if (cityID === "2641455") { // Norfolk, GB
+        credit = `<a href="https://www.pexels.com/photo/cityscape-of-norwich-with-view-of-the-cathedral-norfolk-england-26609585/">Photo by Manousos Kampanellis from Pexels</a>`;
+    } else if (cityID === "5947866") { // Elliot Lake, CA
+        credit = `<a href="https://unsplash.com/photos/a-bridge-over-a-body-of-water-next-to-a-forest--Zg0B6JnVBg">Photo by David Fimio on Unsplash</a>`;
    } else {
         credit = "Error: Image credit not found";
     }
