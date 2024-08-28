@@ -13,7 +13,7 @@
  - credits.js: sets background image of credits page
 
 ## This is how it works:
-On the backend, I send requests to the OpenWeatherMap API (current data as of August 20, 2024 at 4:00 PM Eastern) and then I upload it to the data folder. In the future, this may be automatic.
+On the backend, I send requests to the OpenWeatherMap API (current data as of August 27, 2024 at 9:00 PM Eastern) and then I upload it to the data folder. In the future, this may be automatic.
 - Selects a random location ID from the list
 - Sends a request to the JSON file associated with the location
 - Stores temperature, low, high, feels like, coordinates, location name, country and weather data from the file in variables
