@@ -1,5 +1,5 @@
 # **Weather Somewhere**
-## This displays weather from a random (from a list of 141) location with data from the OpenWeatherMap API.
+## This displays weather from a random (from a list of 140) location with data from the OpenWeatherMap API.
 
 ## How to use it
 1. [https://weathersomewhere.netlify.app](https://weathersomewhere.netlify.app)
@@ -18,8 +18,9 @@ On the backend, I send requests to the OpenWeatherMap API (current data as of Au
 - Sends a request to the JSON file associated with the location
 - Stores temperature, low, high, feels like, coordinates, location name, country and weather data from the file in variables
 - Temperatures are converted to Fahrenheit, rounded and stored in variables
-- The JavaScript adds HTML with the weather, current, high, low data and the Fahrenheit temperatures.
-- The background images are stored in the format City(Country).jpeg and it gets the background
+- Gets the background, population and image credit from the location ID
+- The JavaScript adds HTML with the weather, current, high, low data, Fahrenheit temperatures, population and image credit
+- The background images are stored in the format City(Country).jpeg
 - The coordinates are stored in variables, and the location name (under Weather in) is a link to OpenStreetMap where the coordinates are
 
 ## Screenshots
