@@ -24,9 +24,12 @@ On the backend, I send requests to the OpenWeatherMap API (current data as of Au
 - The coordinates are stored in variables, and the location name (under Weather in) is a link to OpenStreetMap where the coordinates are
 
 ## Screenshots
-![image](https://github.com/user-attachments/assets/ff9be3b1-0477-4db9-a15b-15061d5a0e5b)
-![image](https://github.com/user-attachments/assets/430662c2-7353-4707-a3a3-f5e8c508ffff)
-![image](https://github.com/user-attachments/assets/87dcbbc8-056b-40e7-b576-1ff1ab99de0b)
+![image](https://github.com/user-attachments/assets/7788873b-d8d7-47ff-8402-fd801a08e36e)
+![image](https://github.com/user-attachments/assets/5f62b135-3f50-4354-8ada-32370b56099d)
+![image](https://github.com/user-attachments/assets/fb437040-bd8d-41da-9844-5fb369d38a81)
+
+
+
 
 ## Bugs?
 Probably. Please send a GitHub issue, and I may fix it.
