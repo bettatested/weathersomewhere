@@ -125,7 +125,6 @@ async function getImage() {
         "TampaUS",
         "TegucigalpaHN",
         "TaipeiTW",
-        "TikalGT",
         "TokyoJP",
         "TolucaMX",
         "TorontoCA",
