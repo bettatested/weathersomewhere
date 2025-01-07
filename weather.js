@@ -622,5 +622,4 @@ async function getCreditandPopulation() { // loads image credit, not the most ef
     }
 
     document.getElementById("credit").innerHTML = credit;
-    document.getElementById("population").innerHTML = population;
 }
